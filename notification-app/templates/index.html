@@ -1,0 +1,390 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap project-4 | E-commerce Project</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- custom css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- header section -->
+    <header id="header" class="header">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="/" class="navbar-brand">
+          <img src="{% static 'img/logo.png' %}" alt="company logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#myNavbar"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-2 nav-active">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="#" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="#" class="nav-link">Single Product</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="#" class="nav-link">Store</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-icons d-none d-lg-flex">
+          <!-- single icon -->
+          <div class="navbar-icon mx-2"><i class="fas fa-search"></i></div>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <a href="#" class="navbar-icon mx-2 navbar-cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="cart-items">2</div>
+          </a>
+          <!-- end of  single icon -->
+        </div>
+      </nav>
+      <!-- end of navbar -->
+      <div class="banner d-flex align-items-center pl-3 pl-lg-5">
+        <div>
+          <h1 class="text-slanted text-capitalize mb-0">
+            Minimalist
+          </h1>
+          <h1 class="text-lowercase font-weight-bold">
+            interior style
+          </h1>
+          <a href="#" class="btn btn-yellow"> view collection </a>
+        </div>
+      </div>
+    </header>
+    <!-- end of header section -->
+
+    <!-- services section -->
+    <section id="services" class="services py-5 text-center">
+      <div class="container">
+        <div class="row">
+          <!-- single service --> 
+          <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+            <span class="service-icon">
+              <i class="fas fa-parachute-box"></i>
+            </span>
+            <h5 class="text-uppercase font-weight-bold">
+              free shipping
+            </h5>
+            <p class="text-muted text-capitalize">
+              free shipping on all order over 100.00
+            </p>
+          </div>
+          <!-- end of single service -->
+          <!-- single service --> 
+          <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+            <span class="service-icon">
+              <i class="fas fa-phone-volume"></i>
+            </span>
+            <h5 class="text-uppercase font-weight-bold">
+              ONLINE SUPPORT 24/7
+            </h5>
+            <p class="text-muted text-capitalize">
+              We Will Assist You With Your Inquiries
+            </p>
+          </div>
+          <!-- end of single service -->
+          <!-- single service --> 
+          <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+            <span class="service-icon">
+              <i class="fas fa-dollar-sign"></i>
+            </span>
+            <h5 class="text-uppercase font-weight-bold">
+              MONEY BACK GURANTEE
+            </h5>
+            <p class="text-muted text-capitalize">
+              Free 100% Refund For 30 Da
+            </p>
+          </div>
+          <!-- end of single service -->
+        </div>
+      </div>
+    </section>
+    <!-- end of services section -->
+
+ 
+   
+
+    <!-- featured section -->
+    <section id="featured" class="featured py-5">
+      <div class="container">
+        <div class="row my-3">
+          <div class="col-10 mx-auto text-center">
+            <h1 class="text-uppercase">
+              featured products
+            </h1>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, deleniti?
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- single product -->
+          <div class="col-10 mx-auto col-md-6 col-lg-4">
+            <div class="featured-container p-5">
+              <img src="{% static 'img/img-products/product-1.png' %}" alt="" class="img-fluid">
+              <span class="featured-search-icon" data-toggle="modal" data-target="#productModal">
+                <i class="fas fa-search"></i>
+              </span>
+              <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+            </div>
+            <h6 class="text-capitalize text-center my-2">
+              special product
+            </h6>
+            <h6 class="text-center">
+              <span class="text-muted old-price mx-2">$200</span>
+              <span>$100</span>
+            </h6>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-10 mx-auto col-md-6 col-lg-4">
+            <div class="featured-container p-5">
+              <img src="{% static 'img/img-products/product-6.png' %}" alt="" class="img-fluid">
+              <span class="featured-search-icon" data-toggle="modal" data-target="#productModal">
+                <i class="fas fa-search"></i>
+              </span>
+              <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+            </div>
+            <h6 class="text-capitalize text-center my-2">
+              special product
+            </h6>
+            <h6 class="text-center">
+              <span class="text-muted old-price mx-2">$200</span>
+              <span>$100</span>
+            </h6>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-10 mx-auto col-md-6 col-lg-4">
+            <div class="featured-container p-5">
+              <img src="{% static 'img/img-products/product-2.png' %}" alt="" class="img-fluid">
+              <span class="featured-search-icon" data-toggle="modal" data-target="#productModal">
+                <i class="fas fa-search"></i>
+              </span>
+              <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+            </div>
+            <h6 class="text-capitalize text-center my-2">
+              special product
+            </h6>
+            <h6 class="text-center">
+              <span class="text-muted old-price mx-2">$200</span>
+              <span>$100</span>
+            </h6>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-10 mx-auto col-md-6 col-lg-4">
+            <div class="featured-container p-5">
+              <img src="{% static 'img/img-products/product-3.png' %}" alt="" class="img-fluid">
+              <span class="featured-search-icon" data-toggle="modal" data-target="#productModal">
+                <i class="fas fa-search"></i>
+              </span>
+              <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+            </div>
+            <h6 class="text-capitalize text-center my-2">
+              special product
+            </h6>
+            <h6 class="text-center">
+              <span class="text-muted old-price mx-2">$200</span>
+              <span>$100</span>
+            </h6>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-10 mx-auto col-md-6 col-lg-4">
+            <div class="featured-container p-5">
+              <img src="{% static 'img/img-products/product-4.png' %}" alt="" class="img-fluid">
+              <span class="featured-search-icon" data-toggle="modal" data-target="#productModal">
+                <i class="fas fa-search"></i>
+              </span>
+              <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+            </div>
+            <h6 class="text-capitalize text-center my-2">
+              special product
+            </h6>
+            <h6 class="text-center">
+              <span class="text-muted old-price mx-2">$200</span>
+              <span>$100</span>
+            </h6>
+          </div>
+          <!-- end of single product -->
+          <!-- single product -->
+          <div class="col-10 mx-auto col-md-6 col-lg-4">
+            <div class="featured-container p-5">
+              <img src="{% static 'img/img-products/product-5.png' %}" alt="" class="img-fluid">
+              <span class="featured-search-icon" data-toggle="modal" data-target="#productModal">
+                <i class="fas fa-search"></i>
+              </span>
+              <a href="#" class="featured-store-link text-capitalize">add to cart</a>
+            </div>
+            <h6 class="text-capitalize text-center my-2">
+              special product
+            </h6>
+            <h6 class="text-center">
+              <span class="text-muted old-price mx-2">$200</span>
+              <span>$100</span>
+            </h6>
+          </div>
+          <!-- end of single product -->
+        </div>
+      </div>
+    </section>
+    <!-- end of featured section -->
+
+    
+
+    <!-- newsletter section -->
+    <section id="newsletter" class="newsletter py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 mx-auto text-center">
+            <h2 class="text-uppercase">
+              newsletter
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti blanditiis similique eum, aut culpa maiores cupiditate alias exercitationem error nesciunt.
+            </p>
+            <form action="">
+              <div class="input-group mt-5 mb-4">
+                <input type="text" class="text-capitalize form-control" placeholder="enter your email">
+                <div class="input-group-append">
+                <div class="input-group-text form-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                </div>
+              </div>
+              <button type="submit" class=" btn btn-yellow">subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of newsletter section -->
+
+
+  
+    <!-- modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!-- modal header -->
+          <div class="modal-header">
+            <h5 class="modal-title text-capitalize">product info</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!--end of  modal header -->
+          <!-- modal body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col text-center">
+                <img src="{% static 'img/img-products/product-1.png' %}" class="img-fluid" alt="" />
+                <!-- ratings -->
+                <div class="ratings">
+                  <span class="rating-icon"><i class="fas fa-star"></i></span>
+                  <span class="rating-icon"><i class="fas fa-star"></i></span>
+                  <span class="rating-icon"><i class="fas fa-star"></i></span>
+                  <span class="rating-icon"><i class="fas fa-star"></i></span>
+                  <span class="rating-icon"><i class="far fa-star"></i></span>
+                  <span class="text-capitalize">(25 customer reviews)</span>
+                </div>
+                <!-- end of ratings -->
+                <h2 class="text-uppercase my-2">premium office armchair</h2>
+                <h2>$10.00 - $200.00</h2>
+                <p class="lead text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                  porro.
+                </p>
+                <!-- colors -->
+                <h5 class="text-uppercase">
+                  colors :
+                  <span class="d-inline-block products-color products-color-black mr-2"></span>
+                  <span class="d-inline-block products-color products-color-red mr-2"></span>
+                  <span class="d-inline-block products-color products-color-blue mr-2"></span>
+                </h5>
+                <!-- end of colors -->
+                <!-- sizes -->
+                <h5 class="text-uppercase">
+                  sizes : <span class="mx-2">xs</span> <span class="mx-2">s</span>
+                  <span class="mx-2">m</span> <span class="mx-2">l</span>
+                  <span class="mx-2">xl</span>
+                </h5>
+                <div class="d-flex flex-wrap">
+                  <!-- cart buttons -->
+                  <div class="d-flex my-2">
+                    <span class="btn btn-black mx-1">-</span>
+                    <span class="btn btn-black mx-1">4</span>
+                    <span class="btn btn-black mx-1">+</span>
+                  </div>
+                  <button class="btn btn-black my-2 mx-2">wishlist</button>
+                  <button class="btn btn-yellow my-2 mx-2">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal body -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of modal -->
+    <div style="position: fixed; bottom:10px; right:10px; min-width:600px" id="notifications">
+      
+          
+      
+      
+    </div>
+    <script>
+      var notifications = document.getElementById("notifications")
+      const notificationSocket = new WebSocket(
+        'ws://'
+        + window.location.host
+        + "/ws/notification/"
+      );
+      notificationSocket.onmessage = function(e){
+        data = JSON.parse(e.data);
+        console.log(data)
+        notifications.innerHTML += `<div class="alert alert-info alert-dismissible fade show" role="alert">`+
+                                      data.message +
+                                      `<button type="button" class="close" data-dismiss="alert" aria-label="Close">`+
+                                        `<span aria-hidden="true">&times;</span>`+
+                                      `</button>`+
+                                    `</div>`
+      }
+      notificationSocket.onclose = function(e){
+        console.error("Websocket yopildi.")
+      }
+    </script>
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <!-- fontwesome js -->
+    <script src="{% static 'js/all.min.js' %}"></script>
+    <!-- Custom js -->
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
